@@ -1,0 +1,124 @@
+/*Variables MainPage*/
+/*OHMYFOOD Colors*/
+/*Menus Colors*/
+/*Mixins*/
+/*HEADER CSS*/
+.header {
+  height: 100px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header a {
+    text-decoration: none;
+    color: #fdcb46; }
+
+/*FOOTER CSS*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-size: 25px;
+  margin-top: 50px;
+  position: sticky;
+  bottom: 0;
+  left: 0; }
+  .footer a {
+    text-decoration: none;
+    color: #fdcb46; }
+
+/*OHMYFOOD STYLE*/
+.omf-style {
+  background-color: #579c87;
+  color: #fdcb46;
+  font-family: 'Montserrat', sans-serif; }
+
+/*MAIN PAGE*/
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column; }
+
+/*MENUS DISPOSITION*/
+.menus {
+  display: grid;
+  grid-template-areas: "a b";
+  justify-content: center;
+  grid-gap: 50px;
+  margin: 50px; }
+  .menus > div {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px 6px #e7e2e2;
+    transform: scale(1);
+    transition: transform 800ms; }
+    .menus > div:hover {
+      transform: scale(1.15); }
+
+/*MENUS STYLE*/
+.note {
+  background-color: #fcdfdb;
+  color: #3c1218;
+  font-family: 'Courgette', cursive; }
+  .note p {
+    text-transform: uppercase; }
+
+.chic {
+  background-color: #fff5fe;
+  color: #c77412; }
+  .chic h2 {
+    font-family: 'Croissant One', cursive;
+    background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.delice {
+  background-color: #f9f9f9;
+  color: #0887fb; }
+  .delice h2 {
+    font-family: 'Alex Brush', cursive;
+    background: linear-gradient(to right, #0645e5 0%, #0887fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.palette {
+  background-color: #fdfffd;
+  color: #79c45c; }
+  .palette h2 {
+    font-family: 'Kaushan Script', cursive;
+    background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+/*PROCHAINEMENT*/
+.soon {
+  margin: auto;
+  font-size: 30px;
+  border-radius: 20px;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*MENTIONS LEGALES CSS*/
+body {
+  margin: 0; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 30px 20px 30px; }
+  .container h2, .container h3 {
+    color: #fdcb46; }
+  .container a {
+    text-decoration: none; }
+
+/*MENUS TEMPLATE*/
+
+/*# sourceMappingURL=style.css.map */

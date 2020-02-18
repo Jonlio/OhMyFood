@@ -1,0 +1,32 @@
+/*HEADER CSS*/
+.header {
+    height: 100px;
+    font-size: 30px;
+    @include flex-centre;
+
+    a {
+        text-decoration: none;
+        color: $bandeau-txt;
+    }
+}
+
+/*FOOTER CSS*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 25px;
+    margin-top: 50px;
+    @include sticky;
+
+    a {
+        text-decoration: none;
+        color: $bandeau-txt;
+    }
+}
+
+/*OHMYFOOD STYLE*/
+.omf-style {
+    @include omf-colors;
+    font-family: 'Montserrat', sans-serif;
+}

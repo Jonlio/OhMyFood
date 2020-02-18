@@ -1,0 +1,36 @@
+/*Mixins*/
+@mixin flex-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin omf-colors {
+    background-color: $bandeau-bgr;
+    color: $bandeau-txt;
+}
+
+@mixin menus-structure {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px 6px #e7e2e2;
+}
+
+@mixin menus-zoom {
+    transform: scale(1);
+    transition: transform 800ms;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+@mixin sticky {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+}

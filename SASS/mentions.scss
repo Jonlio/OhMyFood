@@ -1,0 +1,22 @@
+/*MENTIONS LEGALES CSS*/
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 30px 20px 30px;
+    
+    h2,h3{
+        color: $bandeau-txt;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+}
+
+
+
