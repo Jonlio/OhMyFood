@@ -1,0 +1,12 @@
+/*MENU PALETTE DU GOUT CSS*/
+
+.menu-palette {
+    background-color: $palette-bgr;
+    font-family: $palette-font;
+}
+
+.titre-palette {
+    background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

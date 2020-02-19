@@ -1,0 +1,13 @@
+/*MENU DELICE DES PAPILLES CSS*/
+
+.menu-papilles {
+    background-color: $delice-bgr;
+    font-family: $delice-font;
+}
+
+.titre-papilles {
+    color: $delice-clr;
+    background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}

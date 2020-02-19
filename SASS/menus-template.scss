@@ -1,2 +1,26 @@
-/*MENUS TEMPLATE*/
+/*MENUS TEMPLATES CSS*/
 
+.menu {
+    @include flex-column-center;
+    font-size: 20px;
+    margin: 50px;
+
+    .titre-top {
+        @include flex-column-center;
+        margin-top: 50px;
+    }
+}
+
+section {
+    width: 800px;
+    margin: 20px;
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}

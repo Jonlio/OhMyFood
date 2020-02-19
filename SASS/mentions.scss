@@ -6,11 +6,12 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     margin: 20px 30px 20px 30px;
     
     h2,h3{
         color: $bandeau-txt;
+        text-align: center;
     }
     
     a{
