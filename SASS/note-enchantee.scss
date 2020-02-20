@@ -4,9 +4,27 @@
     background-color: $note-bgr;
     color: $note-clr;
     font-family: $note-font;
+
+    i {
+        background: linear-gradient(to right, #f05461 0%, #f6916a 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+     .titre-top {
+        @include flex-column-center;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    
+    .titre-bottom {
+        display: flex;
+        margin: 20px;
+        align-items: baseline;
+
+        h3 {
+            margin-left: 10px;
+        }
+    }
 }
 
-.titre-bottom {
-    display: flex;
-    margin: 20px;
-}

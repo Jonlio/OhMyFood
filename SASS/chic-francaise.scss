@@ -1,24 +1,33 @@
 /*CHIC FRANCAISE CSS*/
 
-.menu-chic-bgr {
+.menu-chic {
     background-color: $chic-bgr;
-}
 
-.titre-chic {
-    font-family: $chic-font;
-    background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
+    .titre-chic {
+        font-size: 40px;
+        font-family: $chic-font;
+        background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    .entrees-chic-clr {
+        color: $chic-clr;
+    }
+
+    .plats-chic-clr {
+        color: #a56799;
+    }
+
+    .desserts-chic-clr {
+        color: #6e4ccc;
+    }
+
+    .trait {
+        width: 250px;
+        height: 10px;
+    }
 }
 
-.entrees-chic-clr {
-     color: $chic-clr;
-}
 
-.plats-chic-clr {
-    color: #a56799;
-}
 
-.desserts-chic-clr {
-    color: #6e4ccc;
-}

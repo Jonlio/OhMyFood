@@ -3,11 +3,18 @@
 .menu-papilles {
     background-color: $delice-bgr;
     font-family: $delice-font;
-}
+    font-size: 25px;
 
-.titre-papilles {
-    color: $delice-clr;
-    background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
+    .titre-papilles {
+        font-size: 60px;
+        color: $delice-clr;
+        background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    .trait {
+        width: 250px;
+        height: 20px;
+    }
 }

@@ -3,10 +3,16 @@
 .menu-palette {
     background-color: $palette-bgr;
     font-family: $palette-font;
-}
 
-.titre-palette {
-    background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    .titre-palette {
+        font-size: 60px;
+        background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .trait{
+        width: 250px;
+        height: 10px;
+    }
 }

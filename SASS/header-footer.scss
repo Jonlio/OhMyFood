@@ -26,6 +26,5 @@
 
 /*OHMYFOOD STYLE*/
 .omf-style {
-    @include omf-colors;
-    font-family: 'Montserrat', sans-serif;
+    @include omf-style;
 }

@@ -1,5 +1,5 @@
 /*Variables*/
-/*OHMYFOOD COLORS*/
+/*OHMYFOOD STYLE*/
 /*MENUS BACKGROUND COLORS*/
 /*MENUS TEXTES COLORS*/
 /*MENUS FONTS*/
@@ -35,7 +35,7 @@
 .omf-style {
   background-color: #579c87;
   color: #fdcb46;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 /*MAIN PAGE*/
 body {
@@ -54,26 +54,31 @@ body {
     height: 400px;
     width: 300px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
     box-shadow: 0px 0px 6px 6px #e7e2e2; }
   .menus p {
     text-transform: uppercase;
-    font-size: 25px; }
+    font-size: 30px;
+    font-family: 'Kalam', cursive; }
+  .menus a {
+    text-decoration: none;
+    text-align: center; }
 
 /*MENUS STYLE*/
 .note {
   background-color: #fcdfdb;
   color: #3c1218; }
   .note h2 {
-    font-family: "Courgette", cursive; }
+    font-family: "Courgette", cursive;
+    font-size: 25px; }
 
 .chic {
   background-color: #fff5fe;
   color: #c77412; }
   .chic h2 {
     font-family: "Croissant One", cursive;
+    font-size: 22px;
     background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -83,6 +88,7 @@ body {
   color: #0887fb; }
   .delice h2 {
     font-family: "Alex Brush", cursive;
+    font-size: 35px;
     background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -92,6 +98,7 @@ body {
   color: #79c45c; }
   .palette h2 {
     font-family: "Kaushan Script", cursive;
+    font-size: 30px;
     background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -122,76 +129,90 @@ body {
   .container a {
     text-decoration: none; }
 
-/*MENUS TEMPLATES CSS*/
+/*MENUS TEMPLATE CSS*/
 .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 20px;
   margin: 50px; }
-  .menu .titre-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px; }
-
-section {
-  width: 800px;
-  margin: 20px; }
-  section > div {
-    display: flex;
-    justify-content: space-between; }
-  section h3 {
-    text-align: center; }
+  .menu section {
+    width: 800px;
+    margin: 20px; }
+    .menu section > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .menu section h3 {
+      text-align: center; }
 
 /*NOTE ENCHANTEE CSS*/
 .menu-note {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "Courgette", cursive; }
-
-.titre-bottom {
-  display: flex;
-  margin: 20px; }
+  .menu-note i {
+    background: linear-gradient(to right, #f05461 0%, #f6916a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .menu-note .titre-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px; }
+  .menu-note .titre-bottom {
+    display: flex;
+    margin: 20px;
+    align-items: baseline; }
+    .menu-note .titre-bottom h3 {
+      margin-left: 10px; }
 
 /*CHIC FRANCAISE CSS*/
-.menu-chic-bgr {
+.menu-chic {
   background-color: #fff5fe; }
-
-.titre-chic {
-  font-family: "Croissant One", cursive;
-  background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
-.entrees-chic-clr {
-  color: #c77412; }
-
-.plats-chic-clr {
-  color: #a56799; }
-
-.desserts-chic-clr {
-  color: #6e4ccc; }
+  .menu-chic .titre-chic {
+    font-size: 40px;
+    font-family: "Croissant One", cursive;
+    background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .menu-chic .entrees-chic-clr {
+    color: #c77412; }
+  .menu-chic .plats-chic-clr {
+    color: #a56799; }
+  .menu-chic .desserts-chic-clr {
+    color: #6e4ccc; }
+  .menu-chic .trait {
+    width: 250px;
+    height: 10px; }
 
 /*MENU DELICE DES PAPILLES CSS*/
 .menu-papilles {
   background-color: #f9f9f9;
-  font-family: "Alex Brush", cursive; }
-
-.titre-papilles {
-  color: #0887fb;
-  background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  font-family: "Alex Brush", cursive;
+  font-size: 25px; }
+  .menu-papilles .titre-papilles {
+    font-size: 60px;
+    color: #0887fb;
+    background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .menu-papilles .trait {
+    width: 250px;
+    height: 20px; }
 
 /*MENU PALETTE DU GOUT CSS*/
 .menu-palette {
   background-color: #fdfffd;
   font-family: "Kaushan Script", cursive; }
-
-.titre-palette {
-  background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  .menu-palette .titre-palette {
+    font-size: 60px;
+    background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .menu-palette .trait {
+    width: 250px;
+    height: 10px; }
 
 /*# sourceMappingURL=style.css.map */
