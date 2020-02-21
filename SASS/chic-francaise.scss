@@ -6,9 +6,7 @@
     .titre-chic {
         font-size: 40px;
         font-family: $chic-font;
-        background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include linear-gradient(#d8852e, #905bfd);
     }
 
     .entrees-chic-clr {
@@ -22,12 +20,4 @@
     .desserts-chic-clr {
         color: #6e4ccc;
     }
-
-    .trait {
-        width: 250px;
-        height: 10px;
-    }
 }
-
-
-

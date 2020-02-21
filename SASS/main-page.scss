@@ -1,8 +1,6 @@
 /*MAIN PAGE*/
 body {
     margin: 0px;
-    display: flex;
-    flex-direction: column;
 }
 
 /*MENUS DISPOSITION*/
@@ -31,9 +29,15 @@ body {
 
 /*MENUS STYLE*/
 
-.note {
+.note,
+.note a {
     background-color: $note-bgr;
     color: $note-clr;
+
+    i {
+        @include linear-gradient(#f05160, #f6916a);
+    }
+
 
     h2 {
         font-family: $note-font;
@@ -41,42 +45,39 @@ body {
     }
 }
 
-.chic {
+.chic,
+.chic a {
     background-color: $chic-bgr;
     color: $chic-clr;
 
     h2 {
         font-family: $chic-font;
         font-size: 22px;
-        background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include linear-gradient(#d8852e, #905bfd);
     }
 }
 
-.delice {
+.delice,
+.delice a {
     background-color: $delice-bgr;
     color: $delice-clr;
 
     h2 {
         font-family: $delice-font;
         font-size: 35px;
-        background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include linear-gradient(#0229dd, #55acfb);
     }
 }
 
-.palette {
+.palette,
+.palette a {
     background-color: $palette-bgr;
     color: $palette-clr;
 
     h2 {
         font-family: $palette-font;
         font-size: 30px;
-        background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include linear-gradient(#42973c, #bfff7e);
     }
 }
 

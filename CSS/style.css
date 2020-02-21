@@ -6,6 +6,7 @@
 /*Mixins*/
 /*Mixins FLEXBOX*/
 /*Mixin MENUS MAIN PAGE*/
+/*Mixin LINEAR-GRADIENT*/
 /*Mixins HEADER-FOOTER*/
 /*HEADER CSS*/
 .header {
@@ -39,9 +40,7 @@
 
 /*MAIN PAGE*/
 body {
-  margin: 0px;
-  display: flex;
-  flex-direction: column; }
+  margin: 0px; }
 
 /*MENUS DISPOSITION*/
 .menus {
@@ -66,37 +65,50 @@ body {
     text-align: center; }
 
 /*MENUS STYLE*/
-.note {
+.note,
+.note a {
   background-color: #fcdfdb;
   color: #3c1218; }
-  .note h2 {
+  .note i,
+  .note a i {
+    background: linear-gradient(to right, #f05160 0%, #f6916a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .note h2,
+  .note a h2 {
     font-family: "Courgette", cursive;
     font-size: 25px; }
 
-.chic {
+.chic,
+.chic a {
   background-color: #fff5fe;
   color: #c77412; }
-  .chic h2 {
+  .chic h2,
+  .chic a h2 {
     font-family: "Croissant One", cursive;
     font-size: 22px;
     background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
-.delice {
+.delice,
+.delice a {
   background-color: #f9f9f9;
   color: #0887fb; }
-  .delice h2 {
+  .delice h2,
+  .delice a h2 {
     font-family: "Alex Brush", cursive;
     font-size: 35px;
-    background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
+    background: linear-gradient(to right, #0229dd 0%, #55acfb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
-.palette {
+.palette,
+.palette a {
   background-color: #fdfffd;
   color: #79c45c; }
-  .palette h2 {
+  .palette h2,
+  .palette a h2 {
     font-family: "Kaushan Script", cursive;
     font-size: 30px;
     background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
@@ -115,9 +127,6 @@ body {
   align-items: center; }
 
 /*MENTIONS LEGALES CSS*/
-body {
-  margin: 0; }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -129,22 +138,30 @@ body {
   .container a {
     text-decoration: none; }
 
+.test {
+  background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 /*MENUS TEMPLATE CSS*/
 .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 20px;
-  margin: 50px; }
+  margin: 5% 10% 5% 10%; }
   .menu section {
-    width: 800px;
-    margin: 20px; }
+    width: 90%;
+    margin-bottom: 20px; }
     .menu section > div {
       display: flex;
       justify-content: space-between;
       align-items: center; }
     .menu section h3 {
       text-align: center; }
+    .menu section .trait {
+      width: 30%;
+      height: 10px; }
 
 /*NOTE ENCHANTEE CSS*/
 .menu-note {
@@ -152,7 +169,7 @@ body {
   color: #3c1218;
   font-family: "Courgette", cursive; }
   .menu-note i {
-    background: linear-gradient(to right, #f05461 0%, #f6916a 100%);
+    background: linear-gradient(to right, #f05160 0%, #f6916a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .menu-note .titre-top {
@@ -183,9 +200,6 @@ body {
     color: #a56799; }
   .menu-chic .desserts-chic-clr {
     color: #6e4ccc; }
-  .menu-chic .trait {
-    width: 250px;
-    height: 10px; }
 
 /*MENU DELICE DES PAPILLES CSS*/
 .menu-papilles {
@@ -198,9 +212,6 @@ body {
     background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-  .menu-papilles .trait {
-    width: 250px;
-    height: 20px; }
 
 /*MENU PALETTE DU GOUT CSS*/
 .menu-palette {
@@ -211,8 +222,5 @@ body {
     background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-  .menu-palette .trait {
-    width: 250px;
-    height: 10px; }
 
 /*# sourceMappingURL=style.css.map */

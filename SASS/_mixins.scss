@@ -23,6 +23,13 @@
     box-shadow: 0px 0px 6px 6px #e7e2e2;
 }
 
+/*Mixin LINEAR-GRADIENT*/
+@mixin linear-gradient($color1, $color2) {
+    background: linear-gradient(to right, $color1 0%, $color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /*Mixins HEADER-FOOTER*/
 @mixin omf-style {
     background-color: $bandeau-bgr;

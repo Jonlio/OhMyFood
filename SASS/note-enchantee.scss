@@ -6,9 +6,7 @@
     font-family: $note-font;
 
     i {
-        background: linear-gradient(to right, #f05461 0%, #f6916a 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include linear-gradient(#f05160, #f6916a);
     }
 
      .titre-top {
@@ -27,4 +25,3 @@
         }
     }
 }
-

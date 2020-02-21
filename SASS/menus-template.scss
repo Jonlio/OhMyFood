@@ -2,11 +2,11 @@
 .menu {
     @include flex-column-center;
     font-size: 20px;
-    margin: 50px;
+    margin: 5% 10% 5% 10%;
 
     section {
-        width: 800px;
-        margin: 20px;
+        width: 90%;
+        margin-bottom: 20px;
 
         > div {
             display: flex;
@@ -17,6 +17,10 @@
         h3 {
             text-align: center;
         }
+
+        .trait {
+            width: 30%;
+            height: 10px;
+        }
     }
 }
-
