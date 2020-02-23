@@ -8,6 +8,10 @@
     i {
         @include linear-gradient(#f05160, #f6916a);
     }
+    
+    h3{
+        @include underline($note-clr);
+    }
 
      .titre-top {
         @include flex-column-center;

@@ -10,4 +10,9 @@
         color: $delice-clr;
         @include linear-gradient(#0645e5, #0889fb);
     }
+
+    h3 {
+        @include underline($delice-clr);
+    }
+
 }

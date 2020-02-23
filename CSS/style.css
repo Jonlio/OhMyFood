@@ -8,6 +8,60 @@
 /*Mixin MENUS MAIN PAGE*/
 /*Mixin LINEAR-GRADIENT*/
 /*Mixins HEADER-FOOTER*/
+/*ANIMATIONS*/
+/*  ANIMATION ZOOM-MENUS  */
+.zoom-menus {
+  text-align: center; }
+
+.zoom-menus:hover {
+  overflow: hidden;
+  transform: scale(1.2);
+  transition: transform 0.6s ease-in-out 0s;
+  opacity: 0.8; }
+
+/*  ANIMATION TROIS POINTS  */
+.dots {
+  content: ".";
+  animation: dots 1.2s steps(5, end) infinite; }
+
+@keyframes dots {
+  0%,
+    20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0); }
+  40% {
+    color: #FFCA28;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0); }
+  60% {
+    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 rgba(0, 0, 0, 0); }
+  80%,
+    100% {
+    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 #FFCA28; } }
+/* ANIMATIONS SHAKE */
+.shake:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+@keyframes shake {
+  10%,
+    90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%,
+    80% {
+    transform: translate3d(2px, 0, 0); }
+  30%,
+    50%,
+    70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%,
+    60% {
+    transform: translate3d(4px, 0, 0); } }
+/* ANIMATION SOULIGNEMENT  TITRES MENUS */
 /*HEADER CSS*/
 .header {
   height: 100px;
@@ -138,11 +192,6 @@ body {
   .container a {
     text-decoration: none; }
 
-.test {
-  background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
 /*MENUS TEMPLATE CSS*/
 .menu {
   display: flex;
@@ -172,6 +221,12 @@ body {
     background: linear-gradient(to right, #f05160 0%, #f6916a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+  .menu-note h3 {
+    background: linear-gradient(to top, #3c1218 5%, transparent 5.01%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 800ms; }
+    .menu-note h3:hover {
+      background-size: 100% 100%; }
   .menu-note .titre-top {
     display: flex;
     flex-direction: column;
@@ -196,10 +251,28 @@ body {
     -webkit-text-fill-color: transparent; }
   .menu-chic .entrees-chic-clr {
     color: #c77412; }
+    .menu-chic .entrees-chic-clr h3 {
+      background: linear-gradient(to top, #c77412 5%, transparent 5.01%) no-repeat;
+      background-size: 0 100%;
+      transition: background-size 800ms; }
+      .menu-chic .entrees-chic-clr h3:hover {
+        background-size: 100% 100%; }
   .menu-chic .plats-chic-clr {
     color: #a56799; }
+    .menu-chic .plats-chic-clr h3 {
+      background: linear-gradient(to top, #a56799 5%, transparent 5.01%) no-repeat;
+      background-size: 0 100%;
+      transition: background-size 800ms; }
+      .menu-chic .plats-chic-clr h3:hover {
+        background-size: 100% 100%; }
   .menu-chic .desserts-chic-clr {
     color: #6e4ccc; }
+    .menu-chic .desserts-chic-clr h3 {
+      background: linear-gradient(to top, #6e4ccc 5%, transparent 5.01%) no-repeat;
+      background-size: 0 100%;
+      transition: background-size 800ms; }
+      .menu-chic .desserts-chic-clr h3:hover {
+        background-size: 100% 100%; }
 
 /*MENU DELICE DES PAPILLES CSS*/
 .menu-papilles {
@@ -212,11 +285,23 @@ body {
     background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+  .menu-papilles h3 {
+    background: linear-gradient(to top, #0887fb 5%, transparent 5.01%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 800ms; }
+    .menu-papilles h3:hover {
+      background-size: 100% 100%; }
 
 /*MENU PALETTE DU GOUT CSS*/
 .menu-palette {
   background-color: #fdfffd;
   font-family: "Kaushan Script", cursive; }
+  .menu-palette h3 {
+    background: linear-gradient(to top, #79c45c 5%, transparent 5.01%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 800ms; }
+    .menu-palette h3:hover {
+      background-size: 100% 100%; }
   .menu-palette .titre-palette {
     font-size: 60px;
     background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);

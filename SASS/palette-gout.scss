@@ -4,6 +4,10 @@
     background-color: $palette-bgr;
     font-family: $palette-font;
 
+    h3 {
+        @include underline($palette-clr);
+    }
+
     .titre-palette {
         font-size: 60px;
         @include linear-gradient(#42973c, #bfff7e);

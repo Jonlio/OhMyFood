@@ -11,13 +11,25 @@
 
     .entrees-chic-clr {
         color: $chic-clr;
+
+        h3 {
+            @include underline($chic-clr);
+        }
     }
 
     .plats-chic-clr {
         color: #a56799;
+
+        h3 {
+            @include underline(#a56799);
+        }
     }
 
     .desserts-chic-clr {
         color: #6e4ccc;
+
+        h3 {
+            @include underline(#6e4ccc);
+        }
     }
 }
