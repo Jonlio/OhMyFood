@@ -5,7 +5,6 @@
 /*MENUS FONTS*/
 /*Mixins*/
 /*Mixins FLEXBOX*/
-/*Mixin MENUS MAIN PAGE*/
 /*Mixin LINEAR-GRADIENT*/
 /*Mixins HEADER-FOOTER*/
 /*ANIMATIONS*/
@@ -61,7 +60,7 @@
   40%,
     60% {
     transform: translate3d(4px, 0, 0); } }
-/* ANIMATION SOULIGNEMENT  TITRES MENUS */
+/* MIXIN TRANSITION SOULIGNEMENT TITRES MENUS */
 /*HEADER CSS*/
 .header {
   height: 100px;
@@ -73,12 +72,11 @@
     text-decoration: none;
     color: #fdcb46; }
 
-/*FOOTER CSS*/
 .footer {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  font-size: 25px;
+  font-size: 30px;
   position: sticky;
   bottom: 0;
   left: 0; }
@@ -92,6 +90,20 @@
   color: #fdcb46;
   font-family: "Montserrat", sans-serif; }
 
+/*RESPONSIVE HEADER-FOOTER*/
+@media all and (max-width: 600px) {
+  .header {
+    height: 80px;
+    font-size: 25px; } }
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30px; }
+  .footer a {
+    font-size: 20px; }
+
 /*MAIN PAGE*/
 body {
   margin: 0px; }
@@ -103,12 +115,13 @@ body {
   justify-content: center;
   grid-gap: 50px;
   margin: 50px; }
-  .menus > div {
+  .menus .cartes {
     height: 400px;
     width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     box-shadow: 0px 0px 6px 6px #e7e2e2; }
   .menus p {
     text-transform: uppercase;
@@ -180,6 +193,16 @@ body {
   justify-content: center;
   align-items: center; }
 
+/*RESPONSIVE MAIN PAGE*/
+@media all and (max-width: 800px) {
+  .menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .cartes {
+    margin: 30px; } }
 /*MENTIONS LEGALES CSS*/
 .container {
   display: flex;
@@ -192,13 +215,20 @@ body {
   .container a {
     text-decoration: none; }
 
+/*RESPONSIVE MENTIONS LEGALES*/
+@media all and (max-width: 600px) {
+  .container {
+    font-size: 15px; } }
 /*MENUS TEMPLATE CSS*/
 .menu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-size: 20px;
   margin: 5% 10% 5% 10%; }
+  .menu h2 {
+    font-size: 35px; }
   .menu section {
     width: 90%;
     margin-bottom: 20px; }
@@ -209,9 +239,17 @@ body {
     .menu section h3 {
       text-align: center; }
     .menu section .trait {
-      width: 30%;
-      height: 10px; }
+      width: 35%;
+      height: 15px; }
 
+/* RESPONSIVE MENUS TEMPLATE*/
+@media all and (max-width: 800px) {
+  section {
+    padding: 10px; }
+    section .trait {
+      display: none; }
+    section h3 {
+      margin: auto; } }
 /*NOTE ENCHANTEE CSS*/
 .menu-note {
   background-color: #fcdfdb;
@@ -230,6 +268,7 @@ body {
   .menu-note .titre-top {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 50px;
     font-size: 20px; }
@@ -240,11 +279,18 @@ body {
     .menu-note .titre-bottom h3 {
       margin-left: 10px; }
 
+/*RESPONSIVE NOTE ENCHANTEE */
+@media all and (max-width: 700px) {
+  .menu-note {
+    font-size: 10px; }
+    .menu-note .titre-top {
+      font-size: 13px; }
+      .menu-note .titre-top h2 {
+        font-size: 20px; } }
 /*CHIC FRANCAISE CSS*/
 .menu-chic {
   background-color: #fff5fe; }
   .menu-chic .titre-chic {
-    font-size: 40px;
     font-family: "Croissant One", cursive;
     background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
     -webkit-background-clip: text;
@@ -274,6 +320,12 @@ body {
       .menu-chic .desserts-chic-clr h3:hover {
         background-size: 100% 100%; }
 
+/*RESPONSIVE CHIC FRANCAISE */
+@media all and (max-width: 700px) {
+  .menu-chic {
+    font-size: 10px; }
+    .menu-chic .titre-chic {
+      font-size: 20px; } }
 /*MENU DELICE DES PAPILLES CSS*/
 .menu-papilles {
   background-color: #f9f9f9;
@@ -292,6 +344,12 @@ body {
     .menu-papilles h3:hover {
       background-size: 100% 100%; }
 
+/* RESPONSIVE MENU DELICE DES PAPILLES*/
+@media all and (max-width: 700px) {
+  .menu-papilles {
+    font-size: 14px; }
+    .menu-papilles .titre-papilles {
+      font-size: 40px; } }
 /*MENU PALETTE DU GOUT CSS*/
 .menu-palette {
   background-color: #fdfffd;
@@ -307,5 +365,12 @@ body {
     background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+
+/* RESPONSIVE MENU PALETTE DU GOUT*/
+@media all and (max-width: 700px) {
+  .menu-palette {
+    font-size: 10px; }
+    .menu-palette .titre-palette {
+      font-size: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

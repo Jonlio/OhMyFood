@@ -10,12 +10,11 @@
     }
 }
 
-/*FOOTER CSS*/
 .footer {
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    font-size: 25px;
+    font-size: 30px;
     @include sticky;
 
     a {
@@ -29,4 +28,19 @@
     @include omf-style;
 }
 
+/*RESPONSIVE HEADER-FOOTER*/
+@media all and (max-width: 600px) {
+    .header {
+        height: 80px;
+        font-size: 25px;
+    }
+}
 
+.footer {
+    @include flex-column-center;
+    height: 30px;
+
+    a {
+        font-size: 20px;
+    }
+}

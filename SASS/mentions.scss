@@ -15,3 +15,10 @@
         text-decoration: none;
     }
 }
+
+/*RESPONSIVE MENTIONS LEGALES*/
+@media all and (max-width: 600px) {
+    .container {
+        font-size: 15px;
+    }
+}

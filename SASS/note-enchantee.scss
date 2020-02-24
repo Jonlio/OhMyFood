@@ -1,5 +1,4 @@
 /*NOTE ENCHANTEE CSS*/
-
 .menu-note {
     background-color: $note-bgr;
     color: $note-clr;
@@ -8,17 +7,17 @@
     i {
         @include linear-gradient(#f05160, #f6916a);
     }
-    
-    h3{
+
+    h3 {
         @include underline($note-clr);
     }
 
-     .titre-top {
+    .titre-top {
         @include flex-column-center;
         margin-top: 50px;
         font-size: 20px;
     }
-    
+
     .titre-bottom {
         display: flex;
         margin: 20px;
@@ -26,6 +25,21 @@
 
         h3 {
             margin-left: 10px;
+        }
+    }
+}
+
+/*RESPONSIVE NOTE ENCHANTEE */
+@media all and (max-width: 700px) {
+    .menu-note {
+        font-size: 10px;
+
+        .titre-top {
+            font-size: 13px;
+
+            h2 {
+                font-size: 20px;
+            }
         }
     }
 }

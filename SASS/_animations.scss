@@ -76,7 +76,7 @@
     }
 }
 
-/* ANIMATION SOULIGNEMENT  TITRES MENUS */
+/* MIXIN TRANSITION SOULIGNEMENT TITRES MENUS */
 
 @mixin underline ($color) {
     background: linear-gradient(to top, ($color) 5%, transparent 5.01%) no-repeat;

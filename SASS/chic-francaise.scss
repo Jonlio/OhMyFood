@@ -1,10 +1,8 @@
 /*CHIC FRANCAISE CSS*/
-
 .menu-chic {
     background-color: $chic-bgr;
 
     .titre-chic {
-        font-size: 40px;
         font-family: $chic-font;
         @include linear-gradient(#d8852e, #905bfd);
     }
@@ -30,6 +28,17 @@
 
         h3 {
             @include underline(#6e4ccc);
+        }
+    }
+}
+
+/*RESPONSIVE CHIC FRANCAISE */
+@media all and (max-width: 700px) {
+    .menu-chic {
+        font-size: 10px;
+
+        .titre-chic {
+            font-size: 20px;
         }
     }
 }

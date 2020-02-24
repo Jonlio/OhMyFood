@@ -4,6 +4,10 @@
     font-size: 20px;
     margin: 5% 10% 5% 10%;
 
+    h2 {
+        font-size: 35px;
+    }
+
     section {
         width: 90%;
         margin-bottom: 20px;
@@ -19,8 +23,23 @@
         }
 
         .trait {
-            width: 30%;
-            height: 10px;
+            width: 35%;
+            height: 15px;
+        }
+    }
+}
+
+/* RESPONSIVE MENUS TEMPLATE*/
+@media all and (max-width: 800px) {
+    section {
+        padding: 10px;
+
+        .trait {
+            display: none;
+        }
+
+        h3 {
+            margin: auto;
         }
     }
 }

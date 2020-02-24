@@ -1,5 +1,4 @@
 /*MENU DELICE DES PAPILLES CSS*/
-
 .menu-papilles {
     background-color: $delice-bgr;
     font-family: $delice-font;
@@ -15,4 +14,15 @@
         @include underline($delice-clr);
     }
 
+}
+
+/* RESPONSIVE MENU DELICE DES PAPILLES*/
+@media all and (max-width: 700px) {
+    .menu-papilles {
+        font-size: 14px;
+
+        .titre-papilles {
+            font-size: 40px;
+        }
+    }
 }

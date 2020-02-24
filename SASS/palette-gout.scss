@@ -1,5 +1,4 @@
 /*MENU PALETTE DU GOUT CSS*/
-
 .menu-palette {
     background-color: $palette-bgr;
     font-family: $palette-font;
@@ -11,5 +10,16 @@
     .titre-palette {
         font-size: 60px;
         @include linear-gradient(#42973c, #bfff7e);
+    }
+}
+
+/* RESPONSIVE MENU PALETTE DU GOUT*/
+@media all and (max-width: 700px) {
+    .menu-palette {
+        font-size: 10px;
+
+        .titre-palette {
+            font-size: 40px;
+        }
     }
 }
