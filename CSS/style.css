@@ -94,16 +94,16 @@
 @media all and (max-width: 600px) {
   .header {
     height: 80px;
-    font-size: 25px; } }
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 30px; }
-  .footer a {
-    font-size: 20px; }
+    font-size: 25px; }
 
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px; }
+    .footer a {
+      font-size: 20px; } }
 /*MAIN PAGE*/
 body {
   margin: 0px; }
