@@ -1,44 +1,42 @@
-/*CHIC FRANCAISE CSS*/
+/*CHIC FRANCAISE CSS ET RESPONSIVE*/
+
 .menu-chic {
     background-color: $chic-bgr;
+
+    @media all and (max-width: 550px) {
+        font-size: 10px;
+    }
 
     .titre-chic {
         font-family: $chic-font;
         @include linear-gradient(#d8852e, #905bfd);
+
+        @media all and (max-width: 550px) {
+            font-size: 18px;
+        }
     }
 
     .entrees-chic-clr {
         color: $chic-clr;
 
-        h3 {
+        .underline-chic-entrees {
             @include underline($chic-clr);
         }
     }
 
     .plats-chic-clr {
-        color: #a56799;
+        color: $chic-plats;
 
-        h3 {
-            @include underline(#a56799);
+        .underline-chic-plats {
+            @include underline($chic-plats);
         }
     }
 
     .desserts-chic-clr {
-        color: #6e4ccc;
+        color: $chic-desserts;
 
-        h3 {
-            @include underline(#6e4ccc);
-        }
-    }
-}
-
-/*RESPONSIVE CHIC FRANCAISE */
-@media all and (max-width: 700px) {
-    .menu-chic {
-        font-size: 10px;
-
-        .titre-chic {
-            font-size: 20px;
+        .underline-chic-desserts {
+            @include underline($chic-desserts);
         }
     }
 }

@@ -1,4 +1,4 @@
-/*MENTIONS LEGALES CSS*/
+/*MENTIONS LEGALES CSS ET RESPONSIVE*/
 
 .container{
     display: flex;
@@ -6,7 +6,11 @@
     align-items: center;
     margin: 20px 30px 20px 30px;
     
-    h2,h3{
+    @media all and (max-width: 500px){
+        font-size: 15px;
+    }
+    
+    h2, h3{
         color: $bandeau-txt;
         text-align: center;
     }
@@ -16,9 +20,3 @@
     }
 }
 
-/*RESPONSIVE MENTIONS LEGALES*/
-@media all and (max-width: 600px) {
-    .container {
-        font-size: 15px;
-    }
-}

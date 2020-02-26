@@ -1,6 +1,7 @@
 /*Mixins*/
 
 /*Mixins FLEXBOX*/
+
 @mixin flex-centre {
     display: flex;
     justify-content: center;
@@ -14,14 +15,18 @@
     align-items: center;
 }
 
+
 /*Mixin LINEAR-GRADIENT*/
+
 @mixin linear-gradient($color1, $color2) {
     background: linear-gradient(to right, $color1 0%, $color2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+
 /*Mixins HEADER-FOOTER*/
+
 @mixin omf-style {
     background-color: $bandeau-bgr;
     color: $bandeau-txt;

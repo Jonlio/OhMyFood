@@ -2,6 +2,7 @@
 /*OHMYFOOD STYLE*/
 /*MENUS BACKGROUND COLORS*/
 /*MENUS TEXTES COLORS*/
+/*MENUS TRAITS DECORATIONS COLORS*/
 /*MENUS FONTS*/
 /*Mixins*/
 /*Mixins FLEXBOX*/
@@ -11,12 +12,11 @@
 /*  ANIMATION ZOOM-MENUS  */
 .zoom-menus {
   text-align: center; }
-
-.zoom-menus:hover {
-  overflow: hidden;
-  transform: scale(1.2);
-  transition: transform 0.6s ease-in-out 0s;
-  opacity: 0.8; }
+  .zoom-menus:hover {
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: transform 0.6s ease-in-out 0s;
+    opacity: 0.8; }
 
 /*  ANIMATION TROIS POINTS  */
 .dots {
@@ -25,7 +25,7 @@
 
 @keyframes dots {
   0%,
-    20% {
+        20% {
     color: rgba(0, 0, 0, 0);
     text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0); }
   40% {
@@ -34,40 +34,38 @@
   60% {
     text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 rgba(0, 0, 0, 0); }
   80%,
-    100% {
+        100% {
     text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 #FFCA28; } }
 /* ANIMATIONS SHAKE */
 .shake:hover {
-  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  perspective: 1000px;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out; }
+  animation: shake 1s ease-in-out; }
 
 @keyframes shake {
   10%,
-    90% {
+        90% {
     transform: translate3d(-1px, 0, 0); }
   20%,
-    80% {
+        80% {
     transform: translate3d(2px, 0, 0); }
   30%,
-    50%,
-    70% {
+        50%,
+        70% {
     transform: translate3d(-4px, 0, 0); }
   40%,
-    60% {
+        60% {
     transform: translate3d(4px, 0, 0); } }
 /* MIXIN TRANSITION SOULIGNEMENT TITRES MENUS */
-/*HEADER CSS*/
+/*HEADER/FOOTER CSS ET RESPONSIVE*/
 .header {
   height: 100px;
   font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media all and (max-width: 500px) {
+    .header {
+      height: 80px;
+      font-size: 25px; } }
   .header a {
     text-decoration: none;
     color: #fdcb46; }
@@ -80,9 +78,19 @@
   position: sticky;
   bottom: 0;
   left: 0; }
+  @media all and (max-width: 500px) {
+    .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 30px; } }
   .footer a {
     text-decoration: none;
     color: #fdcb46; }
+    @media all and (max-width: 500px) {
+      .footer a {
+        font-size: 20px; } }
 
 /*OHMYFOOD STYLE*/
 .omf-style {
@@ -90,21 +98,7 @@
   color: #fdcb46;
   font-family: "Montserrat", sans-serif; }
 
-/*RESPONSIVE HEADER-FOOTER*/
-@media all and (max-width: 600px) {
-  .header {
-    height: 80px;
-    font-size: 25px; }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30px; }
-    .footer a {
-      font-size: 20px; } }
-/*MAIN PAGE*/
+/*MAIN PAGE CSS ET RESPONSIVE*/
 body {
   margin: 0px; }
 
@@ -115,6 +109,12 @@ body {
   justify-content: center;
   grid-gap: 50px;
   margin: 50px; }
+  @media all and (max-width: 800px) {
+    .menus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
   .menus .cartes {
     height: 400px;
     width: 300px;
@@ -123,13 +123,16 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 6px 6px #e7e2e2; }
-  .menus p {
-    text-transform: uppercase;
-    font-size: 30px;
-    font-family: 'Kalam', cursive; }
-  .menus a {
-    text-decoration: none;
-    text-align: center; }
+    @media all and (max-width: 800px) {
+      .menus .cartes {
+        margin: 30px; } }
+    .menus .cartes p {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-family: 'Kalam', cursive; }
+    .menus .cartes a {
+      text-decoration: none;
+      text-align: center; }
 
 /*MENUS STYLE*/
 .note,
@@ -153,7 +156,7 @@ body {
   .chic h2,
   .chic a h2 {
     font-family: "Croissant One", cursive;
-    font-size: 22px;
+    font-size: 21px;
     background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -193,33 +196,22 @@ body {
   justify-content: center;
   align-items: center; }
 
-/*RESPONSIVE MAIN PAGE*/
-@media all and (max-width: 800px) {
-  .menus {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-
-  .cartes {
-    margin: 30px; } }
-/*MENTIONS LEGALES CSS*/
+/*MENTIONS LEGALES CSS ET RESPONSIVE*/
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px 30px 20px 30px; }
+  @media all and (max-width: 500px) {
+    .container {
+      font-size: 15px; } }
   .container h2, .container h3 {
     color: #fdcb46;
     text-align: center; }
   .container a {
     text-decoration: none; }
 
-/*RESPONSIVE MENTIONS LEGALES*/
-@media all and (max-width: 600px) {
-  .container {
-    font-size: 15px; } }
-/*MENUS TEMPLATE CSS*/
+/*MENUS TEMPLATE CSS ET RESPONSIVE*/
 .menu {
   display: flex;
   flex-direction: column;
@@ -227,51 +219,64 @@ body {
   align-items: center;
   font-size: 20px;
   margin: 5% 10% 5% 10%; }
-  .menu h2 {
-    font-size: 35px; }
   .menu section {
     width: 90%;
     margin-bottom: 20px; }
+    @media all and (max-width: 900px) {
+      .menu section {
+        padding: 10px; } }
     .menu section > div {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      .menu section > div > p {
+        max-width: 80%; }
     .menu section h3 {
       text-align: center; }
+      @media all and (max-width: 900px) {
+        .menu section h3 {
+          margin: auto; } }
     .menu section .trait {
-      width: 35%;
+      width: 30%;
       height: 15px; }
+      @media all and (max-width: 900px) {
+        .menu section .trait {
+          width: 25%;
+          height: 10px; } }
+      @media all and (max-width: 700px) {
+        .menu section .trait {
+          display: none; } }
 
-/* RESPONSIVE MENUS TEMPLATE*/
-@media all and (max-width: 800px) {
-  section {
-    padding: 10px; }
-    section .trait {
-      display: none; }
-    section h3 {
-      margin: auto; } }
-/*NOTE ENCHANTEE CSS*/
+/*NOTE ENCHANTEE CSS ET RESPONSIVE*/
 .menu-note {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "Courgette", cursive; }
+  @media all and (max-width: 500px) {
+    .menu-note {
+      font-size: 10px; } }
   .menu-note i {
     background: linear-gradient(to right, #f05160 0%, #f6916a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-  .menu-note h3 {
+  .menu-note .underline-note {
     background: linear-gradient(to top, #3c1218 5%, transparent 5.01%) no-repeat;
     background-size: 0 100%;
     transition: background-size 800ms; }
-    .menu-note h3:hover {
+    .menu-note .underline-note:hover {
       background-size: 100% 100%; }
   .menu-note .titre-top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    font-size: 20px; }
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px; }
+    @media all and (max-width: 500px) {
+      .menu-note .titre-top {
+        font-size: 13px; } }
+    .menu-note .titre-top h2 {
+      font-size: 40px; }
+      @media all and (max-width: 500px) {
+        .menu-note .titre-top h2 {
+          font-size: 20px; } }
   .menu-note .titre-bottom {
     display: flex;
     margin: 20px;
@@ -279,98 +284,101 @@ body {
     .menu-note .titre-bottom h3 {
       margin-left: 10px; }
 
-/*RESPONSIVE NOTE ENCHANTEE */
-@media all and (max-width: 700px) {
-  .menu-note {
-    font-size: 10px; }
-    .menu-note .titre-top {
-      font-size: 13px; }
-      .menu-note .titre-top h2 {
-        font-size: 20px; } }
-/*CHIC FRANCAISE CSS*/
+/*CHIC FRANCAISE CSS ET RESPONSIVE*/
 .menu-chic {
   background-color: #fff5fe; }
+  @media all and (max-width: 550px) {
+    .menu-chic {
+      font-size: 10px; } }
   .menu-chic .titre-chic {
     font-family: "Croissant One", cursive;
     background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+    @media all and (max-width: 550px) {
+      .menu-chic .titre-chic {
+        font-size: 18px; } }
   .menu-chic .entrees-chic-clr {
     color: #c77412; }
-    .menu-chic .entrees-chic-clr h3 {
+    .menu-chic .entrees-chic-clr .underline-chic-entrees {
       background: linear-gradient(to top, #c77412 5%, transparent 5.01%) no-repeat;
       background-size: 0 100%;
       transition: background-size 800ms; }
-      .menu-chic .entrees-chic-clr h3:hover {
+      .menu-chic .entrees-chic-clr .underline-chic-entrees:hover {
         background-size: 100% 100%; }
   .menu-chic .plats-chic-clr {
     color: #a56799; }
-    .menu-chic .plats-chic-clr h3 {
+    .menu-chic .plats-chic-clr .underline-chic-plats {
       background: linear-gradient(to top, #a56799 5%, transparent 5.01%) no-repeat;
       background-size: 0 100%;
       transition: background-size 800ms; }
-      .menu-chic .plats-chic-clr h3:hover {
+      .menu-chic .plats-chic-clr .underline-chic-plats:hover {
         background-size: 100% 100%; }
   .menu-chic .desserts-chic-clr {
     color: #6e4ccc; }
-    .menu-chic .desserts-chic-clr h3 {
+    .menu-chic .desserts-chic-clr .underline-chic-desserts {
       background: linear-gradient(to top, #6e4ccc 5%, transparent 5.01%) no-repeat;
       background-size: 0 100%;
       transition: background-size 800ms; }
-      .menu-chic .desserts-chic-clr h3:hover {
+      .menu-chic .desserts-chic-clr .underline-chic-desserts:hover {
         background-size: 100% 100%; }
 
-/*RESPONSIVE CHIC FRANCAISE */
-@media all and (max-width: 700px) {
-  .menu-chic {
-    font-size: 10px; }
-    .menu-chic .titre-chic {
-      font-size: 20px; } }
-/*MENU DELICE DES PAPILLES CSS*/
+/*MENU DELICE DES PAPILLES CSS ET RESPONSIVE*/
 .menu-papilles {
   background-color: #f9f9f9;
   font-family: "Alex Brush", cursive;
   font-size: 25px; }
+  @media all and (max-width: 550px) {
+    .menu-papilles {
+      font-size: 14px; } }
   .menu-papilles .titre-papilles {
     font-size: 60px;
     color: #0887fb;
     background: linear-gradient(to right, #0645e5 0%, #0889fb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-  .menu-papilles h3 {
+    @media all and (max-width: 550px) {
+      .menu-papilles .titre-papilles {
+        font-size: 40px; } }
+  .menu-papilles .underline-papilles-entrees {
+    background: linear-gradient(to top, #0228dd 5%, transparent 5.01%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 800ms; }
+    .menu-papilles .underline-papilles-entrees:hover {
+      background-size: 100% 100%; }
+  .menu-papilles .underline-papilles-plats {
+    background: linear-gradient(to top, #0670f3 5%, transparent 5.01%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 800ms; }
+    .menu-papilles .underline-papilles-plats:hover {
+      background-size: 100% 100%; }
+  .menu-papilles .underline-papilles-desserts {
     background: linear-gradient(to top, #0887fb 5%, transparent 5.01%) no-repeat;
     background-size: 0 100%;
     transition: background-size 800ms; }
-    .menu-papilles h3:hover {
+    .menu-papilles .underline-papilles-desserts:hover {
       background-size: 100% 100%; }
 
-/* RESPONSIVE MENU DELICE DES PAPILLES*/
-@media all and (max-width: 700px) {
-  .menu-papilles {
-    font-size: 14px; }
-    .menu-papilles .titre-papilles {
-      font-size: 40px; } }
-/*MENU PALETTE DU GOUT CSS*/
+/*MENU PALETTE DU GOUT CSS ET RESPONSIVE*/
 .menu-palette {
   background-color: #fdfffd;
   font-family: "Kaushan Script", cursive; }
-  .menu-palette h3 {
+  @media all and (max-width: 550px) {
+    .menu-palette {
+      font-size: 10px; } }
+  .menu-palette .underline-palette {
     background: linear-gradient(to top, #79c45c 5%, transparent 5.01%) no-repeat;
     background-size: 0 100%;
     transition: background-size 800ms; }
-    .menu-palette h3:hover {
+    .menu-palette .underline-palette:hover {
       background-size: 100% 100%; }
   .menu-palette .titre-palette {
     font-size: 60px;
     background: linear-gradient(to right, #42973c 0%, #bfff7e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-
-/* RESPONSIVE MENU PALETTE DU GOUT*/
-@media all and (max-width: 700px) {
-  .menu-palette {
-    font-size: 10px; }
-    .menu-palette .titre-palette {
-      font-size: 40px; } }
+    @media all and (max-width: 550px) {
+      .menu-palette .titre-palette {
+        font-size: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

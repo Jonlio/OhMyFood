@@ -1,45 +1,48 @@
-/*MENUS TEMPLATE CSS*/
+/*MENUS TEMPLATE CSS ET RESPONSIVE*/
+
 .menu {
     @include flex-column-center;
     font-size: 20px;
     margin: 5% 10% 5% 10%;
 
-    h2 {
-        font-size: 35px;
-    }
-
     section {
         width: 90%;
         margin-bottom: 20px;
+
+        @media all and (max-width: 900px) {
+            padding: 10px;
+        }
 
         > div {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
+            > p {
+                max-width: 80%;
+            }
         }
 
         h3 {
             text-align: center;
+
+            @media all and (max-width: 900px) {
+                margin: auto;
+            }
         }
 
         .trait {
-            width: 35%;
+            width: 30%;
             height: 15px;
-        }
-    }
-}
+            
+            @media all and (max-width: 900px) {
+                width:25%;
+                height: 10px;
+            }
 
-/* RESPONSIVE MENUS TEMPLATE*/
-@media all and (max-width: 800px) {
-    section {
-        padding: 10px;
-
-        .trait {
-            display: none;
-        }
-
-        h3 {
-            margin: auto;
+            @media all and (max-width: 700px) {
+                display: none;
+            }
         }
     }
 }

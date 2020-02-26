@@ -1,9 +1,11 @@
-/*MAIN PAGE*/
+/*MAIN PAGE CSS ET RESPONSIVE*/
+
 body {
     margin: 0px;
 }
 
 /*MENUS DISPOSITION*/
+
 .menus {
     display: grid;
     grid-template-areas: "a b";
@@ -11,24 +13,34 @@ body {
     grid-gap: 50px;
     margin: 50px;
 
+    @media all and (max-width: 800px) {
+        @include flex-column-center;
+    }
+
     .cartes {
         height: 400px;
         width: 300px;
         @include flex-column-center;
         box-shadow: 0px 0px 6px 6px #e7e2e2;
-    }
 
-    p {
-        text-transform: uppercase;
-        font-size: 30px;
-        font-family: 'Kalam', cursive;
-    }
+        @media all and (max-width: 800px) {
+            margin: 30px;
+        }
 
-    a {
-        text-decoration: none;
-        text-align: center;
+        p {
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family: 'Kalam', cursive;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+        }
+
     }
 }
+
 
 /*MENUS STYLE*/
 
@@ -55,7 +67,7 @@ body {
 
     h2 {
         font-family: $chic-font;
-        font-size: 22px;
+        font-size: 21px;
         @include linear-gradient(#d8852e, #905bfd);
     }
 }
@@ -84,7 +96,9 @@ body {
     }
 }
 
+
 /*PROCHAINEMENT*/
+
 .soon {
     margin: 0 auto 40px;
     font-size: 30px;
@@ -92,16 +106,4 @@ body {
     width: 300px;
     height: 50px;
     @include flex-centre;
-}
-
-/*RESPONSIVE MAIN PAGE*/
-@media all and (max-width: 800px) {
-
-    .menus {
-        @include flex-column-center;
-    }
-
-    .cartes {
-        margin: 30px;
-    }
 }
