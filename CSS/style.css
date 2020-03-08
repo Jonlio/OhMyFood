@@ -14,7 +14,7 @@
   text-align: center; }
   .zoom-menus:hover {
     overflow: hidden;
-    transform: scale(1.2);
+    transform: scale(1.15);
     transition: transform 0.6s ease-in-out;
     opacity: 0.8; }
 
@@ -218,7 +218,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 25px;
   margin: 5% 10% 5% 10%; }
   .menu section {
     width: 90%;
@@ -232,6 +232,8 @@ body {
       align-items: center; }
       .menu section > div > p {
         max-width: 80%; }
+      .menu section > div .prix {
+        font-weight: bold; }
     .menu section h3 {
       text-align: center; }
       @media all and (max-width: 900px) {
@@ -252,10 +254,11 @@ body {
 .menu-note {
   background-color: #fcdfdb;
   color: #3c1218;
-  font-family: "Courgette", cursive; }
+  font-family: "Courgette", cursive;
+  font-size: 25px; }
   @media all and (max-width: 500px) {
     .menu-note {
-      font-size: 10px; } }
+      font-size: 14px; } }
   .menu-note i {
     background: linear-gradient(to right, #f05160 0%, #f6916a 100%);
     -webkit-background-clip: text;
@@ -287,10 +290,11 @@ body {
 
 /*CHIC FRANCAISE CSS ET RESPONSIVE*/
 .menu-chic {
-  background-color: #fff5fe; }
+  background-color: #fff5fe;
+  font-size: 25px; }
   @media all and (max-width: 550px) {
     .menu-chic {
-      font-size: 10px; } }
+      font-size: 15px; } }
   .menu-chic .titre-chic {
     font-family: "Croissant One", cursive;
     background: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
@@ -328,10 +332,10 @@ body {
 .menu-papilles {
   background-color: #f9f9f9;
   font-family: "Alex Brush", cursive;
-  font-size: 25px; }
+  font-size: 35px; }
   @media all and (max-width: 550px) {
     .menu-papilles {
-      font-size: 14px; } }
+      font-size: 18px; } }
   .menu-papilles .titre-papilles {
     font-size: 60px;
     color: #0887fb;
@@ -340,7 +344,7 @@ body {
     -webkit-text-fill-color: transparent; }
     @media all and (max-width: 550px) {
       .menu-papilles .titre-papilles {
-        font-size: 40px; } }
+        font-size: 30px; } }
   .menu-papilles .underline-papilles-entrees {
     background: linear-gradient(to top, #0228dd 5%, transparent 5.01%) no-repeat;
     background-size: 0 100%;
@@ -380,6 +384,6 @@ body {
     -webkit-text-fill-color: transparent; }
     @media all and (max-width: 550px) {
       .menu-palette .titre-palette {
-        font-size: 40px; } }
+        font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

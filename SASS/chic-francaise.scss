@@ -2,9 +2,10 @@
 
 .menu-chic {
     background-color: $chic-bgr;
+    font-size: 25px;
 
     @media all and (max-width: 550px) {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .titre-chic {

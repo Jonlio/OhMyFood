@@ -4,9 +4,10 @@
     background-color: $note-bgr;
     color: $note-clr;
     font-family: $note-font;
+    font-size: 25px;
 
     @media all and (max-width: 500px) {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     i {
