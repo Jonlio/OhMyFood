@@ -27,6 +27,11 @@ body {
             margin: 30px;
         }
 
+        @media all and (max-width: 350px) {
+            height: 380px;
+            width: 280px;
+        }
+
         p {
             text-transform: uppercase;
             font-size: 30px;

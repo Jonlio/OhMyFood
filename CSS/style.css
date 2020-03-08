@@ -127,6 +127,10 @@ body {
     @media all and (max-width: 800px) {
       .menus .cartes {
         margin: 30px; } }
+    @media all and (max-width: 350px) {
+      .menus .cartes {
+        height: 380px;
+        width: 280px; } }
     .menus .cartes p {
       text-transform: uppercase;
       font-size: 30px;
