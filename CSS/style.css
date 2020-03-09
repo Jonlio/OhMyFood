@@ -9,7 +9,7 @@
 /*Mixin LINEAR-GRADIENT*/
 /*Mixins HEADER-FOOTER*/
 /*ANIMATIONS*/
-/*  ANIMATION ZOOM-MENUS  */
+/* TRANSITION ZOOM-MENUS  */
 .zoom-menus {
   text-align: center; }
   .zoom-menus:hover {
@@ -104,19 +104,19 @@ body {
   margin: 0px; }
 
 /*MENUS DISPOSITION*/
-.menus {
+main {
   display: grid;
   grid-template-areas: "a b";
   justify-content: center;
   grid-gap: 50px;
   margin: 50px; }
   @media all and (max-width: 800px) {
-    .menus {
+    main {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; } }
-  .menus .cartes {
+  main .cartes {
     height: 400px;
     width: 300px;
     display: flex;
@@ -125,17 +125,17 @@ body {
     align-items: center;
     box-shadow: 0px 0px 6px 6px #e7e2e2; }
     @media all and (max-width: 800px) {
-      .menus .cartes {
+      main .cartes {
         margin: 30px; } }
     @media all and (max-width: 350px) {
-      .menus .cartes {
+      main .cartes {
         height: 380px;
         width: 280px; } }
-    .menus .cartes p {
+    main .cartes p {
       text-transform: uppercase;
       font-size: 30px;
       font-family: 'Kalam', cursive; }
-    .menus .cartes a {
+    main .cartes a {
       text-decoration: none;
       text-align: center; }
 
